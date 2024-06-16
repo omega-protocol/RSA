@@ -25,7 +25,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Luachecdk linter
+      - name: Lua check linter
         uses: lunarmodules/luacheck@v1
 
       # - name: Package

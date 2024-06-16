@@ -2213,7 +2213,7 @@ local function GenerateCustomSpellSetupOptions()
 													hasLocalisation = true
 												end
 											end
-											if not hasLocalisation == true then
+											if hasLocalisation == false then
 												return L["This event is not currently supported by RSA or is not a valid event."]
 											end
 											return true
