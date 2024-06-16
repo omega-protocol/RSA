@@ -533,7 +533,7 @@ local defaults = {
 				messages = {"[LINK] finished!",},
 			},
 		},
-	},	
+	},
 }
 
 RSA.monitorData.shaman, RSA.configData.shaman = RSA.PrepareDataTables(defaults)
