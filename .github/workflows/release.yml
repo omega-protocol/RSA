@@ -2,7 +2,7 @@ name: Package
 
 on:
   push:
-    branch:
+    branches:
       - 'beta'
 #    tags:
 #      - '**'
@@ -24,6 +24,9 @@ jobs:
         uses: actions/checkout@latest
         with:
           fetch-depth: 0
+
+      - name: Luachecdk linter
+        uses: lunarmodules/luacheck@v1
 
       # - name: Package
       #   uses: BigWigsMods/packager@v2
