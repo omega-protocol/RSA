@@ -2,8 +2,10 @@ name: Package
 
 on:
   push:
-    tags:
-      - '**'
+    branch:
+      - 'beta'
+#    tags:
+#      - '**'
     paths-ignore:
       - '.github/**'
 
