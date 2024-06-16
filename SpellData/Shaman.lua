@@ -199,6 +199,119 @@ local defaults = {
 			},
 		},
 	},
+    ['earthGrabTotem'] = {
+		spellID = 51485,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},
+	['groundingTotem'] = {
+		spellID = 204336,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},
+	['healingTideTotem'] = {
+		spellID = 108280,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},
+    ['poisonCleansingTotem'] = {
+		spellID = 383013,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+			['SPELL_DISPEL'] = {
+				messages = {"Cleansed [TARGET]'s [EXTRALINK]!",},
+				tags = {
+					TARGET = true,
+					EXTRA = true,
+				},
+			},
+		},
+	},
+    ['spiritLinkTotem'] = {
+		spellID = 98008,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},
+	['stoneskinTotem'] = {
+		spellID = 383017,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},
+    ['earthbindTotem'] = {
+		spellID = 2484,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			-- TODO save GUID of SPELL_SUMMON, and match this to that.
+			['UNIT_DIED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},
 	['earthenWallTotem'] = {
 		spellID = 198838,
 		configDisplay = {
@@ -249,19 +362,6 @@ local defaults = {
 			},
 		},
 	},
---[[
-Earthgrab Totem
------------------------Feral Spirit
------------------------Fire Elemental
-Grounding Totem
-Healing Tide Totem
------------------------Reincarnation
-Spirit Link Totem
------------------------Thunderstorm
-Tremor Totem
-Wind Rush Totem
-]]--
-
 	['hex'] = {
 		spellID = 51514, -- Frog (Default)
 		additionalSpellIDs = {
@@ -389,6 +489,51 @@ Wind Rush Totem
 			},
 		},
 	},
+    ['tranquilAirTotem'] = {
+		spellID = 383019,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},
+	['tremorTotem'] = {
+		spellID = 8143,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},
+	['windRushTotem'] = {
+		spellID = 192077,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},	
 }
 
 local wrath = {

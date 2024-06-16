@@ -6,8 +6,6 @@ on:
       - 'beta'
 #    tags:
 #      - '**'
-    # paths-ignore:
-    #   - '.github/**'
 
 jobs:
   build:
