@@ -584,8 +584,4 @@ local wrath = {
 	},
 }
 
-if RSA.IsRetail() then
-	RSA.monitorData.deathknight, RSA.configData.deathknight = RSA.PrepareDataTables(defaults)
-elseif RSA.IsWrath() then
-	RSA.monitorData.deathknight, RSA.configData.deathknight = RSA.PrepareDataTables(wrath)
-end
+RSA.monitorData.deathknight, RSA.configData.deathknight = RSA.PrepareDataTables(defaults)

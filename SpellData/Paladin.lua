@@ -1162,8 +1162,4 @@ local wrath = {
 	},
 }
 
-if RSA.IsRetail() then
-	RSA.monitorData.paladin, RSA.configData.paladin = RSA.PrepareDataTables(defaults)
-elseif RSA.IsWrath() then
-	RSA.monitorData.paladin, RSA.configData.paladin = RSA.PrepareDataTables(wrath)
-end
+RSA.monitorData.paladin, RSA.configData.paladin = RSA.PrepareDataTables(defaults)

@@ -434,8 +434,4 @@ local wrath = {
 	},
 }
 
-if RSA.IsRetail() then
-	RSA.monitorData.rogue, RSA.configData.rogue = RSA.PrepareDataTables(defaults)
-elseif RSA.IsWrath() then
-	RSA.monitorData.rogue, RSA.configData.rogue = RSA.PrepareDataTables(wrath)
-end
+RSA.monitorData.rogue, RSA.configData.rogue = RSA.PrepareDataTables(defaults)

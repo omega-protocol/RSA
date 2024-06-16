@@ -452,8 +452,4 @@ local wrath = {
 	},
 }
 
-if RSA.IsRetail() then
-	RSA.monitorData.hunter, RSA.configData.hunter = RSA.PrepareDataTables(defaults)
-elseif RSA.IsWrath() then
-	RSA.monitorData.hunter, RSA.configData.hunter = RSA.PrepareDataTables(wrath)
-end
+RSA.monitorData.hunter, RSA.configData.hunter = RSA.PrepareDataTables(defaults)

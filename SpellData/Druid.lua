@@ -818,8 +818,4 @@ local wrath = {
 	},
 }
 
-if RSA.IsRetail() then
-	RSA.monitorData.druid, RSA.configData.druid = RSA.PrepareDataTables(defaults)
-elseif RSA.IsWrath() then
-	RSA.monitorData.druid, RSA.configData.druid = RSA.PrepareDataTables(wrath)
-end
+RSA.monitorData.druid, RSA.configData.druid = RSA.PrepareDataTables(defaults)

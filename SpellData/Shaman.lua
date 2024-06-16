@@ -698,8 +698,4 @@ local wrath = {
 	},
 }
 
-if RSA.IsRetail() then
-	RSA.monitorData.shaman, RSA.configData.shaman = RSA.PrepareDataTables(defaults)
-elseif RSA.IsWrath() then
-	RSA.monitorData.shaman, RSA.configData.shaman = RSA.PrepareDataTables(wrath)
-end
+RSA.monitorData.shaman, RSA.configData.shaman = RSA.PrepareDataTables(defaults)

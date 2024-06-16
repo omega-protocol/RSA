@@ -460,8 +460,4 @@ local wrath = {
 	},
 }
 
-if RSA.IsRetail() then
-	RSA.monitorData.racials, RSA.configData.racials = RSA.PrepareDataTables(defaults)
-elseif RSA.IsWrath() then
-	RSA.monitorData.racials, RSA.configData.racials = RSA.PrepareDataTables(wrath)
-end
+RSA.monitorData.racials, RSA.configData.racials = RSA.PrepareDataTables(defaults)

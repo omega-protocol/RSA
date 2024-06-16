@@ -715,8 +715,4 @@ local wrath = {
 	},
 }
 
-if RSA.IsRetail() then
-	RSA.monitorData.warlock, RSA.configData.warlock = RSA.PrepareDataTables(defaults)
-elseif RSA.IsWrath() then
-	RSA.monitorData.warlock, RSA.configData.warlock = RSA.PrepareDataTables(wrath)
-end
+RSA.monitorData.warlock, RSA.configData.warlock = RSA.PrepareDataTables(defaults)
