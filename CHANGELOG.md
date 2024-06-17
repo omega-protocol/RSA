@@ -1,6 +1,16 @@
 # RSA-ww 10.0
 * Bump version to The War Within and align major version with WoW version.
 
+## Monk
+* Added Celestial Conduit
+* Removed Dampen Harm
+
+## Priest
+* Added Premonition (4 variant)
+
+## Shaman
+* Added Surging Totem
+
 # RSA 5.15
 * Updated interface version
 

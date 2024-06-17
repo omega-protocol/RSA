@@ -522,6 +522,24 @@ local defaults = {
 			},
 		},
 	},
+	['premonition'] = {
+		spellID = 428924,
+		additionalSpellIDs = {
+			[438734] = true, -- Premonition of Inisght
+			[438733] = true, -- Premonition of Piety
+			[438854] = true, -- Premonition of Solace
+			[438855] = true, -- Premonition of Clairvoyance
+		},
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] activated!",},
+			},
+		},
+	},
 	['silence'] = {
 		spellID = 15487,
 		throttle = 0.25,

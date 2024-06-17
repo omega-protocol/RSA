@@ -534,6 +534,22 @@ local defaults = {
 			},
 		},
 	},
+	['surgingTotem'] = {
+		spellID = 444995,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] placed!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] finished!",},
+			},
+		},
+	},
+
 }
 
 RSA.monitorData.shaman, RSA.configData.shaman = RSA.PrepareDataTables(defaults)

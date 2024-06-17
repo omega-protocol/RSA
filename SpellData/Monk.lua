@@ -17,8 +17,8 @@ local defaults = {
 			},
 		},
 	},
-	['dampenHarm'] = {
-		spellID = 122278,
+	['celestialConduit'] = {
+		spellID = 443028,
 		configDisplay = {
 			isDefault = true,
 			disabledChannels = {whisper = true},
