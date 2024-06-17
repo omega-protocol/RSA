@@ -490,6 +490,17 @@ local defaults = {
 			},
 		},
 	},
+	['holyBulwark'] = {
+		spellID = 432459,
+		configDisplay = {
+			isDefault = true,
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] activated!",},
+			},
+		},
+	},
 	['intercession'] = {
 		spellID = 391054,
 		configDisplay = {
