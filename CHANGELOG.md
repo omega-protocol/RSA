@@ -4,13 +4,16 @@
 ## Death Knight
 * Added Reaper's Mark
 
+## Evoker
+* Added Bestow Weyrnstone, Prescience, Timelessness, Spatial Paradox, Time Spiral
+
 ## Monk
 * Added Celestial Conduit
 * Removed Dampen Harm
 
 ## Paladin
 * Added Holy Bulwark
-* 
+
 ## Priest
 * Added Premonition (4 variant)
 

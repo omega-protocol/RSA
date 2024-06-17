@@ -2,6 +2,18 @@ local RSA = LibStub('AceAddon-3.0'):GetAddon('RSA')
 local L = LibStub('AceLocale-3.0'):GetLocale('RSA')
 
 local defaults = {
+	['bestowWeyrnstone'] = {
+		spellID = 408233,
+		configDisplay = {
+			isDefault = true,
+		},
+		events = {
+			['SPELL_CAST_START'] = {
+				messages = {"Casting [LINK] on [TARGET]!",},
+				tags = {TARGET = true,},
+			},
+		},
+	},
 	['cauterizingFlame'] = {
 		spellID = 374251,
 		throttle = 0.25,
@@ -141,6 +153,23 @@ local defaults = {
 			},
 		},
 	},
+	['prescience'] = {
+		spellID = 409311,
+		throttle = 0.5,
+		configDisplay = {
+			isDefault = true,
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] cast on [TARGET]!",},
+				tags = {TARGET = true,},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] on [TARGET] finished!",},
+				tags = {TARGET = true,},
+			},
+		},
+	},
 	['quell'] = {
 		spellID = 351338,
 		configDisplay = {
@@ -242,6 +271,22 @@ local defaults = {
 			},
 		},
 	},
+	['spatialParadox'] = {
+		spellID = 406732,
+		configDisplay = {
+			isDefault = true,
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] cast on [TARGET]!",},
+				tags = {TARGET = true,},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				messages = {"[LINK] on [TARGET] finished!",},
+				tags = {TARGET = true,},
+			},
+		},
+	},
 	['timeDilation'] = {
 		spellID = 357170,
 		configDisplay = {
@@ -256,6 +301,35 @@ local defaults = {
 				messages = {"[LINK] on [TARGET] finished!",},
 				tags = {TARGET = true,},
 			},]]--
+		},
+	},
+	['timelessness'] = {
+		spellID = 412710,
+		throttle = 0.5,
+		configDisplay = {
+			isDefault = true,
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] cast on [TARGET]!",},
+				tags = {TARGET = true,},
+			},
+		},
+	},
+	['timeSpiral'] = {
+		spellID = 374968,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] activated!",},
+			},
+			['SPELL_AURA_REMOVED'] = {
+				dest = {'player'},
+				messages = {"[LINK] finished!",},
+			},
 		},
 	},
 	['zephyr'] = {

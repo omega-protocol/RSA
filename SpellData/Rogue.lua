@@ -227,7 +227,7 @@ local defaults = {
 			},
 		},
 	},
-		--TODO: Support custom code to tally amount of threat transferred.
+	--TODO: Support custom code to tally amount of threat transferred.
 	['tricks'] = {
 		spellID = 57934,
 		configDisplay = {
