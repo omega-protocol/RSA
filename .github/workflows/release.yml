@@ -1,14 +1,13 @@
-name: Package
+name: Package and Release
 
 on:
   push:
-    branches:
-      - 'beta'
-#    tags:
-#      - '**'
+    tags:
+      - '**'
 
 jobs:
   build:
+    name: Package and Release
     runs-on: ubuntu-latest
 
     # env:
@@ -23,8 +22,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Lua check linter
-        uses: lunarmodules/luacheck@v1
-
-      # - name: Package
-      #   uses: BigWigsMods/packager@v2
+#
+#       - name: Package
+#         uses: BigWigsMods/packager@v2
+#         with:
+#           args: -p 1234 -w 5678 -a he54k6BL
