@@ -5,6 +5,9 @@
 * Added Celestial Conduit
 * Removed Dampen Harm
 
+## Paladin
+* Added Holy Bulwark
+* 
 ## Priest
 * Added Premonition (4 variant)
 
