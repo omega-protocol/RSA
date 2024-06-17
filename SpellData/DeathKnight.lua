@@ -310,6 +310,18 @@ local defaults = {
 			},
 		},
 	},
+	['reapersMark'] = {
+		spellID = 439843,
+		configDisplay = {
+			isDefault = true,
+			disabledChannels = {whisper = true},
+		},
+		events = {
+			['SPELL_CAST_SUCCESS'] = {
+				messages = {"[LINK] activated!",},
+			},
+		},
+	},
 	['runeTap'] = {
 		spellID = 194679,
 		configDisplay = {

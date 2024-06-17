@@ -1,6 +1,9 @@
 # RSA-ww 10.0
 * Bump version to The War Within and align major version with WoW version.
 
+## Death Knight
+* Added Reaper's Mark
+
 ## Monk
 * Added Celestial Conduit
 * Removed Dampen Harm
