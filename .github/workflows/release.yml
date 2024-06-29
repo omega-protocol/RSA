@@ -1,27 +1,30 @@
-name: Package
+name: Package and Release
 
 on:
   push:
     tags:
       - '**'
-    paths-ignore:
-      - '.github/**'
 
 jobs:
   build:
+    name: Package and Release
     runs-on: ubuntu-latest
 
-    env:
-      CF_API_KEY: ${{ secrets.CF_API_KEY }}
-      WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
-      WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
-      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+     env:
+       GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+    #   CF_API_KEY: ${{ secrets.CF_API_KEY }}
+    #   WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
+    #   WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
+
 
     steps:
       - name: Checkout addon
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Pakcage
-        uses: BigWigsMods/packager@v2
+#
+#       - name: Package
+#         uses: BigWigsMods/packager@v2
+#         with:
+#           args: -p 1234 -w 5678 -a he54k6BL

@@ -120,7 +120,7 @@ function RSA.SendMessage.Whisper(message, target, replacements, destName)
 		if RSA.AnnouncementCheck() == false then return end
 	end
 	if RSA.db.profile.general.globalAnnouncements.groupToggles.whisper == true then
-		if not (GetNumGroupMembers() > 1) then return end
+		if (GetNumGroupMembers() <= 1) then return end
 	end
 	if replacements and destName then -- Until we replace all instances where this function is used, check if we have all args before trying to create new format message.
 		if RSA.db.profile.general.replacements.target.alwaysUseName == true then

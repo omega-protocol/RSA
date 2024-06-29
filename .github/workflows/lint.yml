@@ -1,0 +1,19 @@
+name: LUA Linter
+
+on:
+  push:
+    branches:
+      - 'beta'
+
+jobs:
+  linter:
+    name: Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout addon
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Lua check linter
+        uses: lunarmodules/luacheck@v1

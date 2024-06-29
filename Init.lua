@@ -109,10 +109,6 @@ function RSA.IsRetail()
 	return WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
 end
 
-function RSA.IsWrath()
-	return WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC
-end
-
 function RSA:ChatCommand(input)
 	if not InCombatLockdown() then
 		self:EnableModule('Options')
