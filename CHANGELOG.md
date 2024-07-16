@@ -6,6 +6,8 @@
 * Added Reaper's Mark
 ## Evoker
 * Added Bestow Weyrnstone, Prescience, Timelessness, Spatial Paradox, Time Spiral
+## Mage
+* Added Teleport and Portal: Dornogal
 ## Monk
 * Added Celestial Conduit
 * Removed Dampen Harm
