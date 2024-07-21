@@ -1,15 +1,14 @@
-## Interface: 100100
-## Title: RSA
+## Interface: 110055185
+## Title: RSA-ww
 ## Notes: Easy Spell Announcements!
 ## Author: Raeli
-## Version: @project-version@
+## Version: ww-0.1.0
 ## SavedVariables: RSADB, RSA5
 ## OptionalDeps: Ace3, LibDualSpec-1.0, LibSink-2.0
 ## X-Credits: Jenneth, Rowaasr13, Xadurk
 
-## X-Curse-Project-ID: 21464
-## X-WoWI-ID: 25709
-## X-Wago-ID: 25NR4EK3
+## XX-Curse-Project-ID: 21464
+## XX-Wago-ID: 25NR4EK3
 
 #@no-lib-strip@
 embeds.xml
